@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <!-- Font Awesome es una biblioteca de iconos vectoriales de código abierto y gratuita -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- BoxIcons v2.1.2 -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- tipografia referenciada desde google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!--Agregar icono a la pestaña de la pagina-->
+    <link rel="shortcut icon" href="media/lock-alt-solid-24.png" type="image/x-icon">
+</head>
+<body class="light">
+    <header>
+        <a class="a-logo" href="https://app.aluracursos.com/dashboard" target="_blank"><img class="imagen-logo" src="./media/Logo (1).png" alt="Logo de la pagina"></a>
+        <h1 class="text-titulo">Encriptador</h1>
+
+        <input name="toggle" type="checkbox" id="toggle">
+
+        <label class="toggle" for="toggle">
+            <i class="bx bxs-sun"></i>
+            <i class="bx bx-moon"></i>
+            <span class="ball"></span>
+        </label>
+    </header>
+
+    <main>
+
+        <div class="container-section">
+            <section class="section1">
+                <div class="container-campo-encriptado">
+                    <textarea class="caja-texto" name="campo-encriptado" id="campo-encriptado" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="container-advertencia">
+                    <img class="imagen-advertencia" src="./media/exclamation.png" alt="exclamation">
+                    <p class="advertencia">Solo letras mínusculas y sin acentos</p>
+                </div>
+                <div class="container-buttons">
+                    <button class="button boton-encriptar">Encriptar</button>
+                    <button class="button boton-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+    
+            <section class="section2">
+                <div class="container-section2">
+                    <div class="container-parrafo-resultado">
+                        <p class="text-resultado">Aquí ira el resultado</p>
+                    </div>
+                    <div class="container-imagen-muñeco">
+                        <img src="./media/Muñeco.png" alt="Muñeco">
+                    </div>
+                    <h2 class="msj-no-encontrado">Ningun mensaje fue encontrado</h2>
+                    <div class="container-parrafo">
+                        <p>Ingresa el texto que desees encriptar o desencriptar</p> 
+                    </div>
+                    <div class="container-copiar">
+                        <button class="button boton-copiar">Copiar</button>
+                    </div> 
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="container-redes">
+            <section class="button-redes">
+                <a href="https://github.com/josecarde2407" target="_blank">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jose-carlos-cardenas-vallejos-08a2621ba/" target="_blank">
+                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </section>
+        </div>
+    </footer>
+</body>
+<!--Scrip JS-->
+<script src="./index.js"></script>
+</html>
